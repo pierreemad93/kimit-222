@@ -1,0 +1,38 @@
+$main-color: #e67e22;
+$secondery-color: #ecf0f1;
+$primary-btn: #2ecc71;
+$danger-btn: #e74c3c;
+$font-size: 25px;
+* {
+  margin: 0;
+}
+.caption {
+  background-color: $main-color;
+  color: $secondery-color;
+  &-head {
+    font-size: 50px;
+  }
+}
+
+.btn {
+  border: 0px;
+  padding: 2% 4%;
+  color: $secondery-color;
+  font-size: $font-size;
+}
+
+.read-more {
+  @extend .btn;
+  background-color: $primary-btn;
+}
+.read-more:hover {
+  background-color: lighten($primary-btn, 10%);
+}
+.read-less {
+  @extend .btn;
+  background-color: $danger-btn;
+}
+.read-less:hover{
+    background-color: darken($danger-btn, 10%);
+  }
+  
